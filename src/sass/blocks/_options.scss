@@ -1,0 +1,60 @@
+.options{
+    min-height: 580px;
+    &__wrapper{
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+    }
+    &__title{
+        position: absolute;
+        top: 70px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #ffffff;
+        text-align: center;
+        z-index: 5;
+    }
+    &__item{
+        position: relative;
+        height: 580px;
+        background: url('../img/options/cloud.jpg') center center/cover no-repeat;
+        display: flex;
+        align-items: center;
+        &:last-child{
+            background: url('../img/options/server.jpg') center center/cover no-repeat;
+        }
+    }
+    &__text{
+        position: absolute;
+        top: 270px;
+        right: 82px;
+        width: 480px;
+        text-align: right;
+        &::before{
+            @include square;
+            top: -25%;
+            right: -30px;
+        }
+        &_right{
+            text-align: left;
+            right: auto;
+            left: 82px;
+            &::before{
+                right: auto;
+                left: -30px;
+            }
+        }
+    }
+    &__header{
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    &__descr{
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 300;
+    }
+}

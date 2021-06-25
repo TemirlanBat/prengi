@@ -1,0 +1,8 @@
+@mixin square{
+    content: '';
+    display: block;
+    width: 167px;
+    height: 167px;
+    background-color: rgba($color: #00c2f0, $alpha: 0.3);
+    position: absolute;
+}

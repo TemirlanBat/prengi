@@ -1,0 +1,17 @@
+.contact{
+    min-height: 455px;
+    padding: 80px 0;
+    &__img{
+        margin: 0 auto;
+        width: 302px;
+        height: 302px;
+    }
+    &__title{
+        width: 585px;
+        margin: 74px auto 0 auto;
+        text-align: center;
+    }
+    &__btn{
+        margin: 30px auto 0 auto;
+    }
+}

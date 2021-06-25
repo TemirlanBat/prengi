@@ -1,0 +1,33 @@
+.flags{
+    height: 85px; 
+    background-color: #ffffff;
+    padding: 20px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        column-gap: 33px;
+    }
+    &__item{
+        display: grid;
+        grid-template-columns: 28px 100%;
+        column-gap: 11px;
+    }
+    &__img{
+        margin-top: 5px;
+    }
+    &__text{
+        color: #242424;
+        a{
+            color: #242424;
+        }
+    }
+    &__title{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__descr{
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 18px;
+    }
+}
